@@ -1,9 +1,9 @@
 # Blog settings
-permalink: /blog/:title
+permalink: /notes/:title
 
 
 # My variables
-name: Micah Cowell
+name: אלכס פולונסקי
 description: Futuristic web design
 google_verification: null
 
