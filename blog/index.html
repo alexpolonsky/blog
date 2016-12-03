@@ -6,8 +6,26 @@ layout: default
     <ul>
         {% for post in site.posts %}
         <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="date">        <!-- Whitespace added for readability -->
+{% assign m = page.date | date: "%-m" %}
+{{ page.date | date: "%-d" }}
+{% case m %}
+  {% when '1' %}בינואר
+  {% when '2' %}בפברואר
+  {% when '3' %}במרץ
+  {% when '4' %}באפריל
+  {% when '5' %}במאי
+  {% when '6' %}ביוני
+  {% when '7' %}ביולי
+  {% when '8' %}באוגוסט
+  {% when '9' %}בספטמבר
+  {% when '10' %}באוקטובר
+  {% when '11' %}בנובמבר
+  {% when '12' %}בדצמבר
+{% endcase %}
+{{ page.date | date: "%Y" }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endfor %}
+        
     </ul>
 </div>
