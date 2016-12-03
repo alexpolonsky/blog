@@ -3,11 +3,13 @@
 
 @import "reset";
 @import "config";
+@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
 
 body {
 	color: $color-black;
 	background: $color-white;
-	font-family: 'Inconsolata', ;
+	font-family: 'Open Sans Hebrew', sans-serif;
 	font-size: 100%;
 	font-weight: 400;
 }
