@@ -6,8 +6,7 @@ layout: default
     <ul>
         {% for post in site.posts %}
         <li>
-            <span class="date">        <!-- Whitespace added for readability -->
-{% assign m = page.date | date: "%-m" %}
+            <span class="date">{% assign m = page.date | date: "%-m" %}
 {{ page.date | date: "%-d" }}
 {% case m %}
   {% when '1' %}בינואר
